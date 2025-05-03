@@ -1,0 +1,4 @@
+BOULDER=48
+OPTIONS=autopickup, pickup_types:$
+OPTIONS=windowtype:curses
+OPTIONS=perm_invent
