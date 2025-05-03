@@ -1,0 +1,6 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+cargo install bacon
+cargo install cargo-llvm-cov
+{{ end -}}
