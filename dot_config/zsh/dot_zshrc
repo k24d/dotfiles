@@ -5,7 +5,6 @@ export EDITOR=vi
 export HISTCONTROL=ignorespace
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH="$HOME/.local/bin:$PATH"
 
 bindkey -e
 
@@ -15,12 +14,8 @@ eval $(/opt/homebrew/bin/brew shellenv)
 # direnv
 eval "$(direnv hook zsh)"
 
-# starship
-eval "$(starship init zsh)"
-
-# rust
-source ~/.cargo/env
-
 source ~/.config/zsh/config.d/gcloud.sh
 source ~/.config/zsh/config.d/node.sh
 source ~/.config/zsh/config.d/podman.sh
+source ~/.config/zsh/config.d/python.sh
+source ~/.config/zsh/config.d/rust.sh
