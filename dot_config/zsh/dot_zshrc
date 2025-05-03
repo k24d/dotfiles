@@ -25,4 +25,3 @@ source ~/.config/zsh/config.d/conda.sh
 source ~/.config/zsh/config.d/gcloud.sh
 source ~/.config/zsh/config.d/node.sh
 source ~/.config/zsh/config.d/podman.sh
-source ~/.config/zsh/config.d/ruby.sh
