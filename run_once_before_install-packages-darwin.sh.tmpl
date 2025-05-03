@@ -24,12 +24,17 @@ brew "uv"
 brew "maturin"
 brew "rust"
 
+{{- if eq .chezmoi.username "keisuke.nishida" -}}
 # Chrome
 cask "google-chrome"
+
+# Emacs
+cask "emacs"
 
 # ghostty
 brew "starship"
 cask "ghostty"
 cask "font-0xproto-nerd-font"
+{{ end -}}
 EOF
 {{ end -}}

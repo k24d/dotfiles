@@ -32,14 +32,10 @@ chezmoi init --apply $GITHUB_USERNAME
 
 ## Podman
 
-https://podman.io
-
 ```
 % podman machine init
 ```
 
 ## GNU Emacs
-
-https://emacsformacosx.com
 
 - M-x package-install magit
