@@ -105,7 +105,7 @@
 
 (define-key mode-specific-map "," "\C-xe\C-c.")
 (define-key mode-specific-map "b" "\C-xb*scratch*")
-(define-key mode-specific-map "e" "\C-x\C-f/~/.emacs.d/")
+(define-key mode-specific-map "e" "\C-x\C-f/~/.local/share/chezmoi/")
 (define-key mode-specific-map "g" 'grep-find)
 (define-key mode-specific-map "m" 'compile)
 (define-key mode-specific-map "s" 'shell)
