@@ -1,0 +1,10 @@
+font-family = "0xProto Nerd Font Mono"
+# Disable ligatures
+font-feature = "-dlig"
+
+# https://ghostty.org/docs/config/keybind/reference#toggle_quick_terminal
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+
+# http://www.leonerd.org.uk/hacks/fixterms/
+keybind = ctrl+m=text:\x0d
+keybind = ctrl+i=text:\x09
