@@ -21,7 +21,6 @@ eval "$(starship init zsh)"
 # rust
 source ~/.cargo/env
 
-source ~/.config/zsh/config.d/conda.sh
 source ~/.config/zsh/config.d/gcloud.sh
 source ~/.config/zsh/config.d/node.sh
 source ~/.config/zsh/config.d/podman.sh
