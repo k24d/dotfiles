@@ -1,0 +1,26 @@
+AddressFamily inet
+TCPKeepAlive yes
+ServerAliveInterval 60
+# https://www.reddit.com/r/osx/comments/52zn5r/difficulties_with_sshagent_in_macos_sierra/
+UseKeychain yes
+AddKeysToAgent yes
+
+Host mini1
+  HostName 192.168.0.201
+  User mini
+  ForwardAgent yes
+
+Host mini2
+  HostName 192.168.0.202
+  User mini
+  ForwardAgent yes
+
+Host mini3
+  HostName 192.168.0.203
+  User mini
+  ForwardAgent yes
+
+Host mini4
+  HostName 192.168.0.204
+  User mini
+  ForwardAgent yes
