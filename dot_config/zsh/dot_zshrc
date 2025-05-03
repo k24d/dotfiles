@@ -1,0 +1,28 @@
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+export EDITOR=vi
+export HISTCONTROL=ignorespace
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH="$HOME/.local/bin:$PATH"
+
+bindkey -e
+
+# Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# starship
+eval "$(starship init zsh)"
+
+# rust
+source ~/.cargo/env
+
+source ~/.config/zsh/config.d/conda.sh
+source ~/.config/zsh/config.d/gcloud.sh
+source ~/.config/zsh/config.d/node.sh
+source ~/.config/zsh/config.d/podman.sh
+source ~/.config/zsh/config.d/ruby.sh
