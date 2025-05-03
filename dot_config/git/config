@@ -1,0 +1,9 @@
+[user]
+	name = Keisuke Nishida
+	email = keisuke.nishida@gmail.com
+[push]
+	default = simple
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
