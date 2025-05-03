@@ -1,0 +1,35 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+brew bundle --file=/dev/stdin <<EOF
+brew "ack"
+brew "chezmoi"
+brew "direnv"
+brew "gh"
+brew "git"
+brew "ispell"
+brew "just"
+brew "podman"
+brew "rsync"
+
+# nethack
+brew "cmake"
+brew "nethack"
+brew "protobuf"
+
+# Python
+brew "uv"
+
+# Rust
+brew "maturin"
+brew "rust"
+
+# Chrome
+cask "google-chrome"
+
+# ghostty
+brew "starship"
+cask "ghostty"
+cask "font-0xproto-nerd-font"
+EOF
+{{ end -}}
