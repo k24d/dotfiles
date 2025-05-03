@@ -1,0 +1,20 @@
+{{- if eq .chezmoi.username "mini" -}}
+#!/bin/bash
+set -euo pipefail
+
+# Power settings
+sudo pmset -a sleep 0
+sudo pmset -a displaysleep 0
+sudo pmset -a disksleep 0
+sudo pmset -a autorestart 1
+sudo pmset -a womp 1
+sudo pmset -a tcpkeepalive 1
+
+# Enable SSH
+sudo systemsetup -setremotelogin on
+
+# Disable automatic updates
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool false
+sudo softwareupdate --schedule off
+
+{{ end -}}
