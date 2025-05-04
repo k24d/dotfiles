@@ -19,3 +19,4 @@ source ~/.config/zsh/config.d/node.sh
 source ~/.config/zsh/config.d/podman.sh
 source ~/.config/zsh/config.d/python.sh
 source ~/.config/zsh/config.d/rust.sh
+source ~/.config/zsh/config.d/starship.sh
