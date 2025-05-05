@@ -1,4 +1,4 @@
-;;; init.el --- initialization file for GNU Emacs 29  -*- lexical-binding: t; -*-
+;;; init.el --- initialization file for GNU Emacs 30  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
@@ -113,6 +113,12 @@
 
 (defalias 'scroll-up-some-lines "\C-u2\C-v")
 (defalias 'scroll-down-some-lines "\C-u2\ev")
+
+;;; exec-path-from-shell
+
+(use-package exec-path-from-shell
+  :config
+  (exec-path-from-shell-initialize))
 
 ;;; magit
 
