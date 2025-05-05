@@ -1,0 +1,12 @@
+{{- if eq .chezmoi.username "keisuke.nishida" -}}
+#!/bin/bash
+
+emacs --batch \
+  --eval "(require 'package)" \
+  --eval "(add-to-list 'package-archives '(\"melpa\" . \"https://melpa.org/packages/\") t)" \
+  --eval "(package-refresh-contents)" \
+  --eval "(package-initialize)" \
+  --eval "(package-install 'exec-path-from-shell))" \
+  --eval "(package-install 'flycheck))" \
+  --eval "(package-install 'magit))"
+{{ end -}}

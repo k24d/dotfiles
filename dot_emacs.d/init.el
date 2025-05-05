@@ -114,11 +114,6 @@
 (defalias 'scroll-up-some-lines "\C-u2\C-v")
 (defalias 'scroll-down-some-lines "\C-u2\ev")
 
-;;; package
-
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(exec-path-from-shell-initialize)
-
 ;;; magit
 
 (use-package magit
