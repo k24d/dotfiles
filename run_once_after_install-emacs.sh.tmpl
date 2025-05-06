@@ -2,11 +2,9 @@
 #!/bin/bash
 
 emacs --batch \
+  --eval '(load (expand-file-name "custom.el" user-emacs-directory))' \
   --eval "(require 'package)" \
   --eval "(add-to-list 'package-archives '(\"melpa\" . \"https://melpa.org/packages/\") t)" \
   --eval "(package-refresh-contents)" \
-  --eval "(package-initialize)" \
-  --eval "(package-install 'exec-path-from-shell))" \
-  --eval "(package-install 'flycheck))" \
-  --eval "(package-install 'magit))"
+  --eval "(package-install-selected-packages)"
 {{ end -}}
