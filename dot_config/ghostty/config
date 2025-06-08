@@ -1,6 +1,5 @@
-font-family = "0xProto Nerd Font Mono"
-# Disable ligatures
-font-feature = "-dlig"
+# disable programming ligatures
+font-feature = -calt
 
 # https://ghostty.org/docs/config/keybind/reference#toggle_quick_terminal
 keybind = global:cmd+grave_accent=toggle_quick_terminal
