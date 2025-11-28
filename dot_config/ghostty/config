@@ -7,3 +7,5 @@ keybind = global:cmd+grave_accent=toggle_quick_terminal
 # http://www.leonerd.org.uk/hacks/fixterms/
 keybind = ctrl+m=text:\x0d
 keybind = ctrl+i=text:\x09
+
+quick-terminal-size = 50%
